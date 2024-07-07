@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria:#f6f6f6;
+    --cor-terciaria:#22D4FD;
+    --cor-hover:#272727;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    box-sizing:border-box ;
+    background-color: var(--cor-primaria);
+    color : var(--cor-secundaria);
+    /* height: 100vh; */
+}
+
+
+.topo{
+    padding: 2% 0% 0% 15%;   
+}
+.topo__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.topo__menu__link{
+    font-family: "Playwrite MX", cursive;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+.sobre__mim__titulo{
+    font-family:"Playwrite MX", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.sobre__mim{
+    padding: 5% 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao{
+    padding: 5% 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.apresentacao__titulo {
+    font-size:  2.5rem;
+    font-family:"Playwrite MX", cursive;
+} 
+
+strong{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__paragrafo {
+    font-size: 1.5rem;
+    font-family:"Playwrite MX", cursive;
+}
+.sobre__mim__alura{
+    font-family:"Playwrite MX", cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.sobre__mim__paragrafo{
+    font-family:"Playwrite MX", cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+.apresentacao__boton{
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family:"Playwrite MX", cursive; 
+}
+
+.boton__links{
+    border: 0.1rem solid var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1.3rem 0 ;
+    text-decoration: none;
+}
+
+.boton__links:hover{
+    background-color: var(--cor-hover);
+}
+
+.img-perfil{
+    width: 50%;
+    border-radius: 1rem;
+    
+}
+
+.rodape {
+    padding: 1.5rem;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family:"Playwrite MX", cursive; 
+    font-size: 1.5rem;
+    font-weight: 400;    
+}
+@media(max-width:  1200px){
+    .topo{
+        padding: 7%;
+    }
+
+    .topo__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .sobre__mim{
+        flex-direction: column-reverse;
+    }
+
+}
